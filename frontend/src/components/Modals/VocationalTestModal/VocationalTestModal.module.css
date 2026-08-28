@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Tuffy";
+    src: url("../../assets/fonts/Tuffy.ttf");
+  }
+  
+  @font-face {
+    font-family: "Tuffy Bold";
+    src: url("../../assets/fonts/Tuffy_Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Viga";
+    src: url("../../assets/fonts/Viga-Regular.ttf");
+  }
+  
+  
+  * {
+    font-family: "Tuffy Bold";
+  }
+  
+  .closeButton {
+    text-shadow: 1px 2px 3px black;
+    position: absolute;
+    /* Posicionamento absoluto */
+    top: 10px;
+    /* Distância do topo */
+    right: 10px;
+    /* Distância da direita */
+    background: transparent;
+    border: none;
+    /* Remover borda */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor de mãozinha ao passar sobre o botão */
+  }
+  
+  .divVocationalTestModal {
+    pointer-events: all;
+    position: fixed;
+    left: 29%;
+    top: 27%;
+    padding: 0 25px;
+    /* Espaçamento interno */
+    border-radius: 10px;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 40vw;
+    /* Largura da div */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+    /* Incluir padding e border no cálculo da largura total */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(15px);
+    font-family: "Tuffy Bold";
+    justify-content: flex-start
+  }
+  
+  .h2VocationalTestModal {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px black;
+    position: relative;
+    top: 3%;
+  }
+
+  .imgVocationalTestModal {
+    width: 100%;
+  }
+  .spanVocationalDetail{
+    background: #bdc4c44d;
+    text-shadow: 1px 1px 5px black;
+    padding: 2%;
+    font-size: 12px;
+    border-radius: 23px;
+    line-height: 13px;
+  }
+
+  .startButton {
+    background-color: #F9496E;
+    color: white; 
+    text-shadow: 1px 2px 3px black;
+    padding: 10px 20px; 
+    margin-bottom: 5px;
+    margin-top: -10px;
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem; 
+    width: 200px;
+    height: 100px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}

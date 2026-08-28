@@ -1,0 +1,50 @@
+.hide {
+  display: none;
+}
+.sideMenu{
+ bottom : 100%;
+ position: absolute;
+}
+.container {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 7vh;
+  background-image: linear-gradient(#FFFFFF1A, #FFFFFF0A);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1vh;
+}
+
+.container img {
+  width: auto;
+  height: 7vh;
+  margin-top: 1vh;
+}
+
+.container:hover {
+  background-image: linear-gradient(#FFFFFF2A, #FFFFFF1A);
+  cursor: pointer;
+}
+
+.container__closedMenu {
+  display: none;
+}
+
+.container__openMenu {
+  display: flex;
+  animation: slide 0.5s forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

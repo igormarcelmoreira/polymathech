@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Tuffy";
+  src: url("../../assets/fonts/Tuffy.ttf");
+}
+
+@font-face {
+  font-family: "Tuffy Bold";
+  src: url("../../assets/fonts/Tuffy_Bold.ttf");
+}
+
+@font-face {
+  font-family: "Viga";
+  src: url("../../assets/fonts/Viga-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tuffy";
+}
+
+.bodyBackground {
+  background-image: url("../../assets/images/OnboardingBackground.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.title1 {
+  color: #24dbf8;
+  text-transform: uppercase;
+  font-family: "Viga";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+  font-size: 3.5vw !important;
+}
+
+.title2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Viga";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+  font-size: 3.5vw !important;
+}
+
+.titleDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  font-size: 1.4vw;
+  color: #ffffff;
+  font-family: "Tuffy";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-right: 95vh;
+  margin-top: -1vh;
+}
+
+.titleTextDiv {
+  padding-left: 8vw;
+  padding-bottom: 10vw;
+  padding-top: 15vh;
+  text-align: left;
+}
+
+.loginDiv {
+  padding-top: 1vh;
+  padding-right: 1vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registerDiv {
+  margin-top: 1vh;
+}
+
+@media (max-width: 768px) {
+  .BottomDiv {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+    margin-left: 5vw;
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .BottomDiv {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+    margin-left: 5vw;
+    padding-top: 15vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .BottomDiv {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+    margin-left: 5vw;
+    padding-top: 15vh;
+  }
+}
+
+.TitleBottom {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Tuffy Bold";
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  position: relative;
+  font-size: 2vw;
+}
+
+.ElementsDiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+  text-align: left;
+  align-items: center;
+}
+
+.ElementsDiv img {
+  width: 15%;
+  height: 100%;
+}
+
+.ElementsContentDiv {
+  display: flex;
+  flex-direction: row;
+  margin-left: -4vw;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.textBottom {
+  display: flex;
+  font-size: 1.1vw;
+  color: #ffffff;
+  font-family: "Tuffy";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-top: 0vh;
+  margin-left: 3vw;
+  padding-right: 4vw;
+}
+
+.test {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

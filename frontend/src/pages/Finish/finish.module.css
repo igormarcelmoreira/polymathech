@@ -1,0 +1,200 @@
+body {
+  background-image: url("src/assets/images/background.jpg");
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: -webkit-fill-available;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  background-position: center;
+}
+.bodyBackground {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: -webkit-fill-available;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  background-position: center;
+}
+
+h1 {
+    font-size: 3rem !important;
+    font-family: "Tuffy_Bold";
+}
+.container {
+  width: 850px;
+  background-image: linear-gradient(#36174C80, #291a5d80);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0px;
+}
+
+.progressBar {
+  display: flex;
+  margin: 100px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  height: 15%;
+  width: 100%;
+}
+
+.progressBar hr {
+  margin: auto;
+  width: 700px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 6%;
+
+}
+
+/*div da esquerda*/
+.beginStatusDiv {
+  position: relative;
+  height: 150px;
+  width: 80px;
+  left: 10%;
+  top: 5px;
+  /* border: 1px solid red; */
+}
+
+.beginStatusPhoto {
+  position: relative;
+  padding: 20%;
+  left: 2px;
+  height: 54%;
+  margin-bottom: 10px;
+  margin-top: 6px;
+  animation: breathing 9s linear infinite forwards;
+}
+
+.serverLogo {
+  position: relative;
+  top: -23px;
+  height: 35px;
+}
+
+
+.css-10o2lyd-MuiStack-root {
+  padding-top: 0% !important;
+  padding-left: 1%;
+  border: 1px solid red
+}
+
+.component {
+  display: flex !important;
+  margin-left: 4.5% !important;
+
+}
+
+.infoText {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: #B0B8BC;
+  position: relative;
+  top: -25px;
+}
+
+.MuiButtonBase-root {
+  color: "orange",
+}
+
+/* div da direita */
+.endStatusDiv {
+  position: relative;
+  right: 8%;
+  height: 130px;
+  width: 100px;
+  /* border: 1px solid red; */
+  top: -15px;
+}
+
+.endStatusPhoto {
+  position: relative;
+  top: 30px;
+  margin-bottom: 28px;
+  height: 54%;
+  right: 10px;
+  animation: breathing 9s linear infinite backwards;
+}
+
+
+.userLogo {
+  position: relative;
+  right: 10px;
+  height: 25px;
+}
+
+.concText {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  color: #B0B8BC;
+  position: relative;
+  right: 10px;
+}
+
+.congrats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3vh;
+  margin-bottom: 2%;
+}
+
+.congratsImages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.congratsTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Tuffy_Bold";
+  font-size: 1.25rem;
+  color: var(--font-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.congratsButton {
+  width: 15.625rem;
+  height: 3.125rem;
+  text-transform: initial;
+  margin-bottom: 5vh;
+}
+
+
+@keyframes breathing {
+    100% {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@font-face {
+  font-family: "Tuffy";
+  src: url("src/assets/fonts/Tuffy.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Tuffy_Bold";
+  src: url("src/assets/fonts/Tuffy_Bold.ttf") format("truetype");
+}

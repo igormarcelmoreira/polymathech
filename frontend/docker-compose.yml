@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: polymathech-frontend-prod
+    image: polymathech-frontend-prod
+    build:
+      context: .
+      target: production
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 8080:8080

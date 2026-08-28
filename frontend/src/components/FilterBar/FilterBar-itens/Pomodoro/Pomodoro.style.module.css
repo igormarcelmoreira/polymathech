@@ -1,0 +1,122 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 15px;
+    text-shadow: 2px 2px 8px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 30vh;
+    width: 30vw;
+    gap: 2%;
+    overflow-y: auto;
+    height: fit-content;
+    border-radius: 40px;
+    box-shadow: 0 0vh 2vh rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+  }
+.container__internal {
+    height: 100%;
+    width: 90%;
+    display: ruby;
+    align-items: start;
+    margin-left: 5%;
+    gap: 1vh;
+}
+
+.internal__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 4vh;
+    margin-top: 1vh;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.internal__title img {
+    width: 2vw;
+    height: 100%;
+}
+
+.internal__filtro {
+    width: 4vw;
+    height: 4vh; 
+    padding: 1%;
+    font-size: small;
+}
+
+.internal__subtitle {
+    font-size: 1rem;
+}
+
+.internal__list {
+    display: flex;
+    list-style: none;
+    gap: 1vh;
+}
+  
+.timerDisplay {
+    font-size: 3rem;
+    width: 50%;
+    float: left;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  }
+  .timerDisplayOnBreak {
+      font-size: 3rem;
+      width: 50%;
+      float: left;
+      color: rgba(255, 255, 255, 0.3);
+      text-shadow: 2px 2px 8px black;
+    }
+  
+  .timerControls {
+    display: flex;
+    width: 50%;
+    gap: 10px;
+  }
+  
+  .buttonIcon {
+    width: 4vw;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  
+  .buttonIcon.disabled {
+    opacity: 0.2
+    ;
+    cursor: not-allowed;
+  }
+  
+.editIcon {
+    width: 2.5vw;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .editContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .editInput {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 12px;
+    background-color: rgba(73, 73, 73, 0.527);
+    font-size: 1rem;
+  }
+  
+  .saveButton {
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+    background-color: #F9496E;
+    cursor: pointer;
+  }

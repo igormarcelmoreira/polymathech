@@ -1,0 +1,18 @@
+.button{
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #F9496E;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-family: 'Tuffy_Bold';
+}
+
+.button:hover{
+    transition: .2s;
+    background-color: #F96685;
+}

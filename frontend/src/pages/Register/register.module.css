@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("src/assets/images/background.jpg");
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    background-position: center;
+}
+.bodyBackground {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    background-position: center;
+}
+svg {
+    
+    color: #B0B8BC !important;
+}
+span {
+    
+    font-family: "Tuffy_Bold"!important;
+}
+input {
+    
+    font-family: "Tuffy_Bold"!important;
+}
+h1 {
+    font-size: 3rem !important;
+    font-family: "Tuffy_Bold";
+    height: 0%;
+    top: -10%;
+    position: relative;
+}
+label {
+    color: #B0B8BC !important;
+    font-family: "Tuffy_Bold"!important;
+}
+
+fieldset {
+    border-radius: 30px !important;
+}
+
+.container {
+    width: 850px;
+    height: 650px;
+    background-image: linear-gradient(#36174C80, #291a5d80);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.progressBar {
+    display: flex;
+    margin: 100px;
+    margin-bottom: 80px;
+    margin-top: 0px;
+    height: 15%;
+    width: 100%;
+}
+
+.progressBar hr {
+    margin: auto;
+    width: 700px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 6%;
+
+}
+
+/*div da esquerda*/
+.beginStatusDiv {
+    position: relative;
+    height: 150px;
+    width: 80px;
+    left: 10%;
+    top: 5px;
+    /* border: 1px solid red; */
+}
+
+.beginStatusPhoto {
+    position: relative;
+    left: 2px;
+    height: 54%;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    animation: breathing 9s linear infinite forwards;
+}
+
+.serverLogo {
+    position: relative;
+    top: -23px;
+    height: 35px;
+}
+
+
+.css-10o2lyd-MuiStack-root {
+    padding-top: 0% !important;
+    padding-left: 1%;
+    border: 1px solid red
+}
+
+.component {
+    display: flex !important;
+    margin-left: 4.5% !important;
+
+}
+
+.infoText {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #B0B8BC;
+    position: relative;
+    top: -25px;
+}
+
+.MuiButtonBase-root {
+    color: "orange",
+}
+
+/* div da direita */
+.endStatusDiv {
+    position: relative;
+    right: 8%;
+    height: 130px;
+    width: 100px;
+    /* border: 1px solid red; */
+    top: -15px;
+}
+
+.endStatusPhoto {
+    position: relative;
+    padding: 15px;
+    top: 30px;
+    margin-bottom: 28px;
+    height: 54%;
+    right: 10px;
+    animation: breathing 9s linear infinite backwards;
+}
+
+/* SignUp button */
+.signUpButton {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #F9496E;
+    color: white;
+    font-size: 1.25rem;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-family: 'Tuffy_Bold';
+}
+
+.errorWarning{
+    color: red
+}
+
+.userLogo {
+    position: relative;
+    right: 10px;
+    height: 25px;
+}
+
+.concText {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    color: #B0B8BC;
+    position: relative;
+    right: 10px;
+}
+
+.footerBar {
+    width: 1100px;
+    background-color: #5740a825;
+    border: 1px solid #5740a825;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: transparent;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 163px;
+    height: 42px;
+}
+
+.linksSpace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.linksSpace a {
+    text-decoration: none;
+    color: #A59FB2;
+}
+
+.linksSpace a:hover {
+    text-decoration: none;
+    color: red;
+    transition: .1s;
+}
+
+.botaoCadastrar {
+    margin-top: 40%;
+}
+
+
+@keyframes breathing {
+    100% {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        transform: rotate(360deg);
+    }
+}
+
+
+@font-face {
+    font-family: "Tuffy";
+    src: url("src/assets/fonts/Tuffy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Tuffy_Bold";
+    src: url("src/assets/fonts/Tuffy_Bold.ttf") format("truetype");
+}

@@ -1,0 +1,167 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 15px;
+    text-shadow: 2px 2px 8px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 30vh;
+    width: 30vw;
+    gap: 2%;
+    overflow-y: auto;
+    height: fit-content;
+    border-radius: 40px;
+    box-shadow: 0 0vh 2vh rgba(0, 0, 0, 0.5);
+}
+
+.container__internal {
+    height: 32vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.internal__title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 1vh;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.internal__title img {
+    width: 2vw;
+    height: auto;
+}
+
+.internal__subtitle {
+    font-size: 1rem;
+    color: white;
+    text-align: start;
+    width: 100%;
+}
+
+.internal__inputadd {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.goalsPainel {
+    background-color: rgba(255, 255, 255, 0.24);
+    text-shadow: 2px 2px 8px black;
+    border-radius: 40px;
+    box-shadow: 0 0vh 2vh rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 8px;
+    font-size: 1rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+.goalsInfo {
+    text-shadow: 2px 2px 8px black;
+    padding: 8px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.internal__input {
+    background-color: rgba(255, 255, 255, 0.24);
+    text-shadow: 2px 2px 8px black;
+    border-radius: 40px;
+    box-shadow: 0 0vh 2vh rgba(0, 0, 0, 0.5);
+    width: 22.5vw;
+    padding: 8px;
+    border: none;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.buttonIcon {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toggleButton {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.circleIndicator {
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    background-color: #ccc; 
+    margin-right: 10px;
+}
+
+.buttonIcon:hover {
+    background-color: #ccc;
+}
+
+.internal__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1vh;
+    width: 100%;
+}
+
+.internal__list li {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    overflow-x: clip;
+}
+
+.internal__list li button {
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.internal__list li.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.goalText {
+    width: -webkit-fill-available;
+    text-align: start;
+    overflow-wrap: break-word;
+    margin: 0px 12px;
+    overflow-x: auto;
+}

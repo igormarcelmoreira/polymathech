@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Tuffy";
+    src: url("../../assets/fonts/Tuffy.ttf");
+  }
+  
+  @font-face {
+    font-family: "Tuffy Bold";
+    src: url("../../assets/fonts/Tuffy_Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Viga";
+    src: url("../../assets/fonts/Viga-Regular.ttf");
+  }
+
+
+*{
+    font-family: "Tuffy Bold";
+}
+
+
+.sendButton {
+    background-color: #F9496E;
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento externo */
+    border: none; /* Remover borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.sendButton:hover {
+    transition: .2s;
+    background-color: #F96685;
+}
+
+.input {
+    width: 80%; /* Largura do input */
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 0; /* Espaçamento externo */
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Incluir padding e border no cálculo da largura total */
+    font-size: 16px; /* Tamanho da fonte */
+    font-family: "Tuffy Bold";
+}
+
+.closeButton {
+    position: absolute; /* Posicionamento absoluto */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    background: transparent;
+    border: none; /* Remover borda */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mãozinha ao passar sobre o botão */
+}
+
+.div {
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Centralizar verticalmente */
+    left: 50%; /* Centralizar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustar posição para centralização exata */
+    padding: 20px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 500px; /* Largura da div */
+    box-sizing: border-box; /* Incluir padding e border no cálculo da largura total */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    font-family: "Tuffy Bold";
+}

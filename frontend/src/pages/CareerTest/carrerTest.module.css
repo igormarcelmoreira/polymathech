@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Tuffy";
+  src: url("../../assets/fonts/Tuffy.ttf");
+}
+
+@font-face {
+  font-family: "Tuffy Bold";
+  src: url("../../assets/fonts/Tuffy_Bold.ttf");
+}
+
+@font-face {
+  font-family: "Viga";
+  src: url("../../assets/fonts/Viga-Regular.ttf");
+}
+
+.bodyBackground {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../assets/images/background.jpg");
+  background-position: center;
+}
+
+.container {
+  width: 85%;
+  max-height: 40rem;
+  background-image: linear-gradient(#36174c80, #291a5d80);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.backButton {
+  margin-left: 5%;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}
+
+.pageNumDiv {
+  display: grid;
+  margin: 5% 0%;
+  margin-left: 10%;
+}
+
+.selectedLabel {
+  border: 1px solid rgb(202, 18, 190);
+}
+
+.pageNumItem {
+  display: flex;
+  align-items: center;
+}
+
+.pageNum {
+  position: -webkit-sticky;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.pageNumText {
+  font-family: "Tuffy", sans-serif;
+  font-size: 14px;
+  color: white;
+  width: auto;
+}
+
+.questionContainer {
+  overflow-y: scroll;
+  margin: 5%;
+  width: 57%;
+  margin-right: 20%;
+
+  /* Esconder a barra de scroll em navegadores WebKit (Chrome, Safari) */
+  -webkit-overflow-scrolling: touch;
+}
+
+.questionContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* Esconder a barra de scroll em navegadores Firefox */
+.questionContainer {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Esconder a barra de scroll em navegadores IE e Edge */
+.questionContainer {
+  -ms-overflow-style: none; /* IE e Edge */
+}
+
+.questionSpace {
+  margin-top: 5%;
+}
+
+.answerSpace {
+  display: flex;
+  gap: 13%;
+  justify-content: center;
+}
+
+.question {
+  font-size: 1.5rem !important; /* Defina o tamanho da fonte desejado */
+  color: white; /* Exemplo de definição de cor do texto */
+  max-width: 80%; /* Defina uma largura máxima */
+  margin: 0 auto; /* Centralize o texto */
+  text-align: justify; /* Alinhe o texto de forma justificada */
+  padding-left: 7%; /* Ajuste o espaçamento à esquerda para porcentagem */
+}
+
+.answerRange {
+  display: block;
+  gap: 13%;
+  justify-content: left;
+}
+
+.answerDiv {
+  display: block;
+  width: 20px;
+  margin-top: 4%;
+  gap: 10%;
+}
+
+.answer {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border 0.5s ease;
+}
+
+.selectedAnswer {
+  border: 12px solid rgb(235, 19, 152);
+}
+
+@keyframes pulseBorder {
+  0% {
+    border-color: rgb(235, 19, 152);
+  }
+  50% {
+    border-color: rgb(9, 241, 9);
+  }
+  100% {
+    border-color: green;
+  }
+}
+
+.allAnswersSelected {
+  animation: pulseBorder 1s ease-out;
+  border: 8px solid green;
+}
+
+.selectedPage {
+  border: 8px solid red;
+}
+
+.answerDiv:nth-child(1) .answer {
+  filter: hue-rotate(70deg) saturate(100%);
+}
+
+.answerDiv:nth-child(2) .answer {
+  filter: hue-rotate(55deg) saturate(50%);
+}
+
+.answerDiv:nth-child(3) .answer {
+  filter: grayscale(100%);
+}
+
+.answerDiv:nth-child(4) .answer {
+  filter: hue-rotate(170deg) saturate(50%);
+}
+
+.answerDiv:nth-child(5) .answer {
+  filter: hue-rotate(170deg) saturate(100%);
+}
+
+.finishButton {
+  background-color: #F9496E;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  width: 16vw;
+  height: 6vh;
+}
+
+.finishButton:hover {
+  transition: .2s;
+  background-color: #F96685;
+}
+
+.buttonsSpace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  gap: 20px;
+}

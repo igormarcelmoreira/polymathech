@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Kodchasan";
+  src: url("src/assets/fonts/Kodchasan-Regular.ttf") format("truetype");
+}
+
+.logo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sidebar {
+  align-self: flex-start;
+  height: 100%;
+  position: relative;
+  margin: 2%;
+  width: min-content;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logo {
+  height: 10%;
+  padding-left: 15%;
+}
+
+.itens {
+  padding: 10%;
+  height: 12%;
+  pointer-events: all;
+}
+
+.itens:hover {
+  padding: 0%;
+  height: 12%;
+  /* animation: breathing 9s linear infinite backwards; */
+}
+
+.itensHover {
+  padding: 0%;
+  height: 12%;
+  /* animation: breathing 9s linear infinite backwards; */
+}
+
+.itemLabel {
+  font-family: 'Kodchasan';
+  text-shadow: 1px 2px 3px black;
+  opacity: 0;
+  height: 0%;
+  top: -2.5%;
+  line-height: 119%;
+  position: relative;
+}
+
+.itens:hover~.itemLabel {
+  opacity: 1;
+
+}
+
+.itemLabelHover {
+  font-family: 'Kodchasan';
+  text-shadow: 1px 2px 3px black;
+  opacity: 0;
+  height: 0%;
+  top: -2.5%;
+  line-height: 119%;
+  position: relative;
+  opacity: 1;
+
+}
+
+.linkSidebar {
+  color: white !important;
+
+}
+
+
+@keyframes breathing {
+  100% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transform: rotate(360deg);
+  }
+}

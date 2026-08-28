@@ -1,0 +1,43 @@
+.footerBar {
+  width: 95%;
+  max-width: 70vw;
+  background-color: #5740a825;
+  border: 1px solid #5740a825;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.footerItems {
+  background: transparent;
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerItems img {
+  width: 14%;
+  min-width: 95px;
+  height: 94%;
+}
+
+.linksSpace {
+  text-shadow: 1px 2px 4px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.linksSpace a {
+  text-decoration: none;
+  color: #a59fb2;
+}
+
+.linksSpace a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.1s;
+}
